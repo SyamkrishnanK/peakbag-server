@@ -1,0 +1,36 @@
+{
+    "name": "peekbag-server",
+    "version": "1.0.0",
+    "description": "peekbag-server",
+    "main": "server.js",
+    "scripts": {
+        "start": "cross-env NODE_ENV=development nodemon server",
+        "prod": "node server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@gitlab.com/menonakshay/mchain-server.git"
+    },
+    "keywords": [],
+    "author": "meselfjithu@gmil.com",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://gitlab.com/menonakshay/mchain-server/issues"
+    },
+    "homepage": "https://gitlab.com/menonakshay/mchain-server#readme",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "dotenv": "^8.0.0",
+        "express": "^4.16.4",
+        "mongodb": "^3.2.3",
+        "morgan": "^1.9.1",
+        "uuid": "^3.3.2",
+        "validator": "^11.0.0"
+    },
+    "devDependencies": {
+        "cross-env": "^5.2.0",
+        "eslint": "^5.16.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "nodemon": "^1.19.0"
+    }
+}

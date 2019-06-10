@@ -1,0 +1,3 @@
+{
+    "uri": "mongodb+srv://{username}:{password}@peekbag-h2m23.mongodb.net/test?retryWrites=true&w=majority"
+}
