@@ -27,11 +27,14 @@ const allowedOrigins = [
     "localhost:3030",
     "http://localhost:3030",
     "http://127.0.0.1:3030",
-    "https://misochain.herokuapp.com"
+    "https://peakbag-server.herokuapp.com"
 ];
 
 app.use(function(req, res, next) {
-    res.setHeader("Access-Control-Allow-Origin", req.headers.origin);
+    res.setHeader(
+        "Access-Control-Allow-Origin",
+        req.headers.origin || "https://peakbag-server.herokuapp.com"
+    );
     res.setHeader(
         "Access-Control-Allow-Methods",
         "GET, POST, OPTIONS, PUT, PATCH, DELETE"
